@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-14T12:21:22 IST" name="Default suite" finished-at="2024-10-14T12:24:58 IST" duration-ms="215977">
+    <groups>
+    </groups>
+    <test started-at="2024-10-14T12:21:22 IST" name="Default test" finished-at="2024-10-14T12:24:58 IST" duration-ms="215977">
+      <class name="Amity.Online.Module1_FunctionalTesting">
+        <test-method is-config="true" signature="GenerateReport()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:22 IST" name="GenerateReport" finished-at="2024-10-14T12:21:22 IST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateReport -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:22 IST" name="LaunchBrowser" finished-at="2024-10-14T12:21:27 IST" duration-ms="4834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="AmityLogo()[pri:1, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:27 IST" name="AmityLogo" finished-at="2024-10-14T12:21:27 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmityLogo -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:27 IST" name="CloseBrowser" finished-at="2024-10-14T12:21:28 IST" duration-ms="339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AmityLogo status=SUCCESS method=Module1_FunctionalTesting.AmityLogo()[pri:1, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:28 IST" name="LaunchBrowser" finished-at="2024-10-14T12:21:31 IST" duration-ms="2779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ProgramsHeaderButton()[pri:2, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:31 IST" name="ProgramsHeaderButton" finished-at="2024-10-14T12:21:31 IST" duration-ms="517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProgramsHeaderButton -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:31 IST" name="CloseBrowser" finished-at="2024-10-14T12:21:31 IST" duration-ms="322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ProgramsHeaderButton status=SUCCESS method=Module1_FunctionalTesting.ProgramsHeaderButton()[pri:2, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:31 IST" name="LaunchBrowser" finished-at="2024-10-14T12:21:34 IST" duration-ms="2512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="CareerServicesHeaderButton()[pri:3, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:34 IST" name="CareerServicesHeaderButton" finished-at="2024-10-14T12:21:36 IST" duration-ms="2380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CareerServicesHeaderButton -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:36 IST" name="CloseBrowser" finished-at="2024-10-14T12:21:37 IST" duration-ms="321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CareerServicesHeaderButton status=SUCCESS method=Module1_FunctionalTesting.CareerServicesHeaderButton()[pri:3, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:37 IST" name="LaunchBrowser" finished-at="2024-10-14T12:21:39 IST" duration-ms="2565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="AdvantagesHeaderButton()[pri:4, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:39 IST" name="AdvantagesHeaderButton" finished-at="2024-10-14T12:21:40 IST" duration-ms="1077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdvantagesHeaderButton -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:40 IST" name="CloseBrowser" finished-at="2024-10-14T12:21:41 IST" duration-ms="363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AdvantagesHeaderButton status=SUCCESS method=Module1_FunctionalTesting.AdvantagesHeaderButton()[pri:4, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:41 IST" name="LaunchBrowser" finished-at="2024-10-14T12:21:44 IST" duration-ms="3191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="SearchHeaderButton()[pri:5, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:44 IST" name="SearchHeaderButton" finished-at="2024-10-14T12:21:44 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchHeaderButton -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:44 IST" name="CloseBrowser" finished-at="2024-10-14T12:21:44 IST" duration-ms="309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchHeaderButton status=SUCCESS method=Module1_FunctionalTesting.SearchHeaderButton()[pri:5, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:44 IST" name="LaunchBrowser" finished-at="2024-10-14T12:21:49 IST" duration-ms="4933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="CallusHeaderButton()[pri:6, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:49 IST" name="CallusHeaderButton" finished-at="2024-10-14T12:21:51 IST" duration-ms="2292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CallusHeaderButton -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:51 IST" name="CloseBrowser" finished-at="2024-10-14T12:21:52 IST" duration-ms="311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CallusHeaderButton status=SUCCESS method=Module1_FunctionalTesting.CallusHeaderButton()[pri:6, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:52 IST" name="LaunchBrowser" finished-at="2024-10-14T12:21:54 IST" duration-ms="2746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="StudentLoginHeaderButton()[pri:7, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:54 IST" name="StudentLoginHeaderButton" finished-at="2024-10-14T12:21:57 IST" duration-ms="2334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentLoginHeaderButton -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:57 IST" name="CloseBrowser" finished-at="2024-10-14T12:21:57 IST" duration-ms="303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=StudentLoginHeaderButton status=SUCCESS method=Module1_FunctionalTesting.StudentLoginHeaderButton()[pri:7, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:21:57 IST" name="LaunchBrowser" finished-at="2024-10-14T12:22:00 IST" duration-ms="2552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="EnrollNowHeaderButton()[pri:8, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:00 IST" name="EnrollNowHeaderButton" finished-at="2024-10-14T12:22:03 IST" duration-ms="3034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnrollNowHeaderButton -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:03 IST" name="CloseBrowser" finished-at="2024-10-14T12:22:03 IST" duration-ms="331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EnrollNowHeaderButton status=SUCCESS method=Module1_FunctionalTesting.EnrollNowHeaderButton()[pri:8, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:03 IST" name="LaunchBrowser" finished-at="2024-10-14T12:22:06 IST" duration-ms="2884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ApplyNowHerocardButton()[pri:9, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:06 IST" name="ApplyNowHerocardButton" finished-at="2024-10-14T12:22:11 IST" duration-ms="5321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyNowHerocardButton -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:11 IST" name="CloseBrowser" finished-at="2024-10-14T12:22:12 IST" duration-ms="384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ApplyNowHerocardButton status=SUCCESS method=Module1_FunctionalTesting.ApplyNowHerocardButton()[pri:9, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:12 IST" name="LaunchBrowser" finished-at="2024-10-14T12:22:14 IST" duration-ms="2757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Callusicon()[pri:10, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:14 IST" name="Callusicon" finished-at="2024-10-14T12:22:21 IST" duration-ms="6466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Callusicon -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:21 IST" name="CloseBrowser" finished-at="2024-10-14T12:22:21 IST" duration-ms="389" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Callusicon status=SUCCESS method=Module1_FunctionalTesting.Callusicon()[pri:10, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:21 IST" name="LaunchBrowser" finished-at="2024-10-14T12:22:24 IST" duration-ms="2824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="WhatsappIcon()[pri:11, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:24 IST" name="WhatsappIcon" finished-at="2024-10-14T12:22:28 IST" duration-ms="3692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WhatsappIcon -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:28 IST" name="CloseBrowser" finished-at="2024-10-14T12:22:28 IST" duration-ms="324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=WhatsappIcon status=SUCCESS method=Module1_FunctionalTesting.WhatsappIcon()[pri:11, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:28 IST" name="LaunchBrowser" finished-at="2024-10-14T12:22:30 IST" duration-ms="2416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ViewAllButton()[pri:12, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:30 IST" name="ViewAllButton" finished-at="2024-10-14T12:22:32 IST" duration-ms="1030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewAllButton -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:32 IST" name="CloseBrowser" finished-at="2024-10-14T12:22:32 IST" duration-ms="331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ViewAllButton status=SUCCESS method=Module1_FunctionalTesting.ViewAllButton()[pri:12, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:32 IST" name="LaunchBrowser" finished-at="2024-10-14T12:22:35 IST" duration-ms="2690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="RequestAcallButton()[pri:13, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:35 IST" name="RequestAcallButton" finished-at="2024-10-14T12:22:38 IST" duration-ms="3419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RequestAcallButton -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:38 IST" name="CloseBrowser" finished-at="2024-10-14T12:22:38 IST" duration-ms="296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RequestAcallButton status=SUCCESS method=Module1_FunctionalTesting.RequestAcallButton()[pri:13, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:38 IST" name="LaunchBrowser" finished-at="2024-10-14T12:22:41 IST" duration-ms="2605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ViewAllStayInformed()[pri:14, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:41 IST" name="ViewAllStayInformed" finished-at="2024-10-14T12:22:42 IST" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewAllStayInformed -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:42 IST" name="CloseBrowser" finished-at="2024-10-14T12:22:42 IST" duration-ms="306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ViewAllStayInformed status=SUCCESS method=Module1_FunctionalTesting.ViewAllStayInformed()[pri:14, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:42 IST" name="LaunchBrowser" finished-at="2024-10-14T12:22:45 IST" duration-ms="2543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ViewAllLatestBlog()[pri:15, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:45 IST" name="ViewAllLatestBlog" finished-at="2024-10-14T12:22:46 IST" duration-ms="1228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewAllLatestBlog -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:46 IST" name="CloseBrowser" finished-at="2024-10-14T12:22:46 IST" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ViewAllLatestBlog status=SUCCESS method=Module1_FunctionalTesting.ViewAllLatestBlog()[pri:15, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:46 IST" name="LaunchBrowser" finished-at="2024-10-14T12:22:49 IST" duration-ms="2675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="KnowMore()[pri:16, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:49 IST" name="KnowMore" finished-at="2024-10-14T12:22:52 IST" duration-ms="2890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KnowMore -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:52 IST" name="CloseBrowser" finished-at="2024-10-14T12:22:52 IST" duration-ms="329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KnowMore status=SUCCESS method=Module1_FunctionalTesting.KnowMore()[pri:16, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:52 IST" name="LaunchBrowser" finished-at="2024-10-14T12:22:55 IST" duration-ms="2537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ApplyNowButtonCTAs()[pri:17, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:22:55 IST" name="ApplyNowButtonCTAs" finished-at="2024-10-14T12:23:00 IST" duration-ms="4968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyNowButtonCTAs -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:00 IST" name="CloseBrowser" finished-at="2024-10-14T12:23:00 IST" duration-ms="235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ApplyNowButtonCTAs status=SUCCESS method=Module1_FunctionalTesting.ApplyNowButtonCTAs()[pri:17, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:00 IST" name="LaunchBrowser" finished-at="2024-10-14T12:23:02 IST" duration-ms="2616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Aboutus()[pri:18, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:02 IST" name="Aboutus" finished-at="2024-10-14T12:23:08 IST" duration-ms="5169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aboutus -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:08 IST" name="CloseBrowser" finished-at="2024-10-14T12:23:08 IST" duration-ms="377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Aboutus status=SUCCESS method=Module1_FunctionalTesting.Aboutus()[pri:18, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:08 IST" name="LaunchBrowser" finished-at="2024-10-14T12:23:11 IST" duration-ms="2658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="CareerServices()[pri:19, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:11 IST" name="CareerServices" finished-at="2024-10-14T12:23:16 IST" duration-ms="4962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CareerServices -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:16 IST" name="CloseBrowser" finished-at="2024-10-14T12:23:16 IST" duration-ms="386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CareerServices status=SUCCESS method=Module1_FunctionalTesting.CareerServices()[pri:19, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:16 IST" name="LaunchBrowser" finished-at="2024-10-14T12:23:19 IST" duration-ms="2716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="StudentStories()[pri:20, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:19 IST" name="StudentStories" finished-at="2024-10-14T12:23:24 IST" duration-ms="5606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentStories -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:24 IST" name="CloseBrowser" finished-at="2024-10-14T12:23:25 IST" duration-ms="344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=StudentStories status=SUCCESS method=Module1_FunctionalTesting.StudentStories()[pri:20, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:25 IST" name="LaunchBrowser" finished-at="2024-10-14T12:23:27 IST" duration-ms="2730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Leadership()[pri:21, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:27 IST" name="Leadership" finished-at="2024-10-14T12:23:33 IST" duration-ms="5193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Leadership -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:33 IST" name="CloseBrowser" finished-at="2024-10-14T12:23:33 IST" duration-ms="369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Leadership status=SUCCESS method=Module1_FunctionalTesting.Leadership()[pri:21, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:33 IST" name="LaunchBrowser" finished-at="2024-10-14T12:23:35 IST" duration-ms="2489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Corporate()[pri:22, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:35 IST" name="Corporate" finished-at="2024-10-14T12:23:41 IST" duration-ms="5311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Corporate -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:41 IST" name="CloseBrowser" finished-at="2024-10-14T12:23:41 IST" duration-ms="379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Corporate status=SUCCESS method=Module1_FunctionalTesting.Corporate()[pri:22, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:41 IST" name="LaunchBrowser" finished-at="2024-10-14T12:23:44 IST" duration-ms="2570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Contactus()[pri:23, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:44 IST" name="Contactus" finished-at="2024-10-14T12:23:49 IST" duration-ms="5009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Contactus -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:49 IST" name="CloseBrowser" finished-at="2024-10-14T12:23:49 IST" duration-ms="345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Contactus status=SUCCESS method=Module1_FunctionalTesting.Contactus()[pri:23, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:49 IST" name="LaunchBrowser" finished-at="2024-10-14T12:23:52 IST" duration-ms="3272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="TermsandConditions()[pri:24, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:52 IST" name="TermsandConditions" finished-at="2024-10-14T12:23:57 IST" duration-ms="5041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TermsandConditions -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:57 IST" name="CloseBrowser" finished-at="2024-10-14T12:23:58 IST" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TermsandConditions status=SUCCESS method=Module1_FunctionalTesting.TermsandConditions()[pri:24, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:23:58 IST" name="LaunchBrowser" finished-at="2024-10-14T12:24:00 IST" duration-ms="2705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="StudentSupport()[pri:25, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:00 IST" name="StudentSupport" finished-at="2024-10-14T12:24:08 IST" duration-ms="7251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentSupport -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:08 IST" name="CloseBrowser" finished-at="2024-10-14T12:24:08 IST" duration-ms="353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=StudentSupport status=SUCCESS method=Module1_FunctionalTesting.StudentSupport()[pri:25, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:08 IST" name="LaunchBrowser" finished-at="2024-10-14T12:24:11 IST" duration-ms="2717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="IntellectualProperty()[pri:26, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:11 IST" name="IntellectualProperty" finished-at="2024-10-14T12:24:20 IST" duration-ms="9269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IntellectualProperty -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:20 IST" name="CloseBrowser" finished-at="2024-10-14T12:24:21 IST" duration-ms="418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=IntellectualProperty status=SUCCESS method=Module1_FunctionalTesting.IntellectualProperty()[pri:26, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:21 IST" name="LaunchBrowser" finished-at="2024-10-14T12:24:23 IST" duration-ms="2484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="UGCApprovals()[pri:27, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:23 IST" name="UGCApprovals" finished-at="2024-10-14T12:24:29 IST" duration-ms="5881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UGCApprovals -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:29 IST" name="CloseBrowser" finished-at="2024-10-14T12:24:29 IST" duration-ms="350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UGCApprovals status=SUCCESS method=Module1_FunctionalTesting.UGCApprovals()[pri:27, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:29 IST" name="LaunchBrowser" finished-at="2024-10-14T12:24:32 IST" duration-ms="3004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Resource()[pri:28, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:32 IST" name="Resource" finished-at="2024-10-14T12:24:39 IST" duration-ms="6853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Resource -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:39 IST" name="CloseBrowser" finished-at="2024-10-14T12:24:39 IST" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Resource status=SUCCESS method=Module1_FunctionalTesting.Resource()[pri:28, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:39 IST" name="LaunchBrowser" finished-at="2024-10-14T12:24:42 IST" duration-ms="2548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Blog()[pri:29, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:42 IST" name="Blog" finished-at="2024-10-14T12:24:47 IST" duration-ms="4928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blog -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:47 IST" name="CloseBrowser" finished-at="2024-10-14T12:24:47 IST" duration-ms="396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Blog status=SUCCESS method=Module1_FunctionalTesting.Blog()[pri:29, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:47 IST" name="LaunchBrowser" finished-at="2024-10-14T12:24:50 IST" duration-ms="2647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Media()[pri:30, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:50 IST" name="Media" finished-at="2024-10-14T12:24:57 IST" duration-ms="7038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Media -->
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:57 IST" name="CloseBrowser" finished-at="2024-10-14T12:24:57 IST" duration-ms="378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Media status=SUCCESS method=Module1_FunctionalTesting.Media()[pri:30, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="CloseReport()[pri:0, instance:Amity.Online.Module1_FunctionalTesting@7bbc8656]" started-at="2024-10-14T12:24:57 IST" name="CloseReport" finished-at="2024-10-14T12:24:58 IST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseReport -->
+      </class> <!-- Amity.Online.Module1_FunctionalTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
