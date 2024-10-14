@@ -40,7 +40,7 @@ public class Module1_FunctionalTesting {
 	@FindBy(xpath = "//img[@alt='amity-logo']")   //Amity Logo
 	WebElement amitylogoElement;
 	
-	@FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]") //ProgramButton
+	@FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[]") //ProgramButton
 	WebElement programButtonElement;
 
 	@FindBy(xpath = "//span[@class='mr-1 uppercase laptop:font-medium header_menuText__KlhzO'][normalize-space()='CAREER SERVICES']") //Career Services
