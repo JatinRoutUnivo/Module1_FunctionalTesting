@@ -288,7 +288,7 @@ public class Module1_FunctionalTesting {
 			handle6.addAll(windowhandle1);
 			Thread.sleep(2000);
 			driver.switchTo().window(handle6.get(1));
-			String CareerServicesURL = "https://amityonline.com/career-service";
+			String CareerServicesURL = "https://amityonline.com/career-services";
 			String ActualURL = driver.getCurrentUrl();
 			if(ActualURL.equals(CareerServicesURL)) {
 				test.log(Status.PASS, "Career Service Button is working");
@@ -319,7 +319,7 @@ public class Module1_FunctionalTesting {
 		try {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", advanragesButtonElement);
-			String ExpadvanrageelementURL = "https://amityonline.com/amity-online-advantag";
+			String ExpadvanrageelementURL = "https://amityonline.com/amity-online-advantage";
 			if(driver.getCurrentUrl().equals(ExpadvanrageelementURL)) {
 				test.log(Status.PASS, "Advantages button is working");
 				System.out.println("Advantages button is working");
