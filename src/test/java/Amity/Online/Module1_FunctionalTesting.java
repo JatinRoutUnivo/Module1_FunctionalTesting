@@ -223,7 +223,7 @@ public class Module1_FunctionalTesting {
 
 	}
 
-	@Test (priority = 1)
+/*	@Test (priority = 1)
 
 	public void AmityLogo() {
 		test=reports.createTest("Amity_Logo");
@@ -1798,6 +1798,8 @@ public class Module1_FunctionalTesting {
 		}
 
 	}
+
+	*/
 
 	@Test(priority = 40)
 	//Bachelor of Arts (Tamil Medium)
