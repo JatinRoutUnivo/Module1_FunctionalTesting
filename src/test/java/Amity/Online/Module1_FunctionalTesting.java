@@ -171,7 +171,7 @@ public class Module1_FunctionalTesting {
 	@FindBy(xpath = "//a[contains(text(),'B.Com with Specialization in International Finance')]")  // B.Com with Specialization in International Finance & Accounting
 	WebElement BcomFinance;
 
-	@FindBy(xpath = "//a[normalize-space()='Bachelor Of Commerce (Honours)']")  // Bachelor Of Commerce (Honours)
+	@FindBy(xpath = "//a[normalize-space()='Bachelor Of Commerce (Honour)']")  // Bachelor Of Commerce (Honours)
 	WebElement BcomHonours;
 
 	@BeforeTest
@@ -1935,7 +1935,7 @@ public class Module1_FunctionalTesting {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", BcomFinance);
 			Thread.sleep(3000);
-			String ExpBcomFinance = "https://amityonline.com/bcom-internationalfinance";
+			String ExpBcomFinance = "https://amityonline.com/bcom-internationalfinanc";
 			if(driver.getCurrentUrl().equals(ExpBcomFinance)) {
 				test.log(Status.PASS, "BComwithSpecializationinInternationalFinanceandAccounting_Program url is verified");
 				System.out.println("BComwithSpecializationinInternationalFinanceandAccounting_Program url is verified");
