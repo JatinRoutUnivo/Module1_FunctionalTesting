@@ -39,6 +39,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -48,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>15-10-2024 17:32</span>
+			<span class='label blue darken-3 suite-start-time'>15-10-2024 17:49</span>
 			</a>
 		</ul>
 	</div>
@@ -64,6 +65,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -107,12 +109,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>44</span> tests passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$33%'>
+                    <span class='strong'>1</span> tests passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> tests failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='66%'>
+                    2</span> tests failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -133,17 +135,17 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Amity_Logo</span>
-						<span class='test-time'>15-10-2024 17:32</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>BachelorofArtsHindiMedium_Program</span>
+						<span class='test-time'>15-10-2024 17:49</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:32</span>
-	<span class='label end-time'>15-10-2024 17:32</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.056</span>
+	<span class='label start-time'>15-10-2024 17:49</span>
+	<span class='label end-time'>15-10-2024 17:50</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 04.206</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -155,30 +157,76 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:32:39 PM</td>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>5:49:59 PM</td>
 				<td class='step-details'>
-						Amity logo Verified
+						BachelorofArtsHindiMedium_Program url is not verified
+				</td>
+			</tr>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>5:49:59 PM</td>
+				<td class='step-details'>
+						An Assertion error occurred: expected [true] but found [false]
+				</td>
+			</tr>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>5:50:00 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: Assertion error occurred: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at Amity.Online.Module1_FunctionalTesting.BachelorofArtsHindiMedium(Module1_FunctionalTesting.java:1922)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
 
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\eclipse-workspace\Online\Screenshot\BachelorofArtsHindiMedium_20241015175000.png' src='C:\Users\admin\eclipse-workspace\Online\Screenshot\BachelorofArtsHindiMedium_20241015175000.png'></li>
+							</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>Program_Button</span>
-						<span class='test-time'>15-10-2024 17:32</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>BComwithSpecializationinInternationalFinanceandAccounting_Program</span>
+						<span class='test-time'>15-10-2024 17:50</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:32</span>
-	<span class='label end-time'>15-10-2024 17:32</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.218</span>
+	<span class='label start-time'>15-10-2024 17:50</span>
+	<span class='label end-time'>15-10-2024 17:50</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 05.099</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -190,1465 +238,76 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:32:44 PM</td>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>5:50:06 PM</td>
 				<td class='step-details'>
-						Program button is working
+						BComwithSpecializationinInternationalFinanceandAccounting_Program url is not verified
+				</td>
+			</tr>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>5:50:06 PM</td>
+				<td class='step-details'>
+						An Assertion error occurred: expected [true] but found [false]
+				</td>
+			</tr>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>5:50:07 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: Assertion error occurred: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at Amity.Online.Module1_FunctionalTesting.BComwithSpecializationinInternationalFinanceandAccounting(Module1_FunctionalTesting.java:1963)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
 
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\eclipse-workspace\Online\Screenshot\BComwithSpecializationinInternationalFinanceandAccounting_20241015175007.png' src='C:\Users\admin\eclipse-workspace\Online\Screenshot\BComwithSpecializationinInternationalFinanceandAccounting_20241015175007.png'></li>
+							</ul>
 					</div>
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>Career_Services</span>
-						<span class='test-time'>15-10-2024 17:32</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:32</span>
-	<span class='label end-time'>15-10-2024 17:32</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.230</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:32:48 PM</td>
-				<td class='step-details'>
-						Career Service Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>Advantages_Button</span>
-						<span class='test-time'>15-10-2024 17:32</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:32</span>
-	<span class='label end-time'>15-10-2024 17:32</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.547</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:32:51 PM</td>
-				<td class='step-details'>
-						Advantages button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>Search_Button</span>
-						<span class='test-time'>15-10-2024 17:32</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:32</span>
-	<span class='label end-time'>15-10-2024 17:32</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.078</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:32:54 PM</td>
-				<td class='step-details'>
-						Search button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>Call Us_Header button</span>
-						<span class='test-time'>15-10-2024 17:32</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:32</span>
-	<span class='label end-time'>15-10-2024 17:32</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.203</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:32:59 PM</td>
-				<td class='step-details'>
-						Call us button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>Student Login_Header Button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.120</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:04 PM</td>
-				<td class='step-details'>
-						Student login_button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>Enroll Now_Header Button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.346</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:08 PM</td>
-				<td class='step-details'>
-						Enroll Now Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>Apply Now_button Herocard</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.207</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:15 PM</td>
-				<td class='step-details'>
-						Apply Now_button Herocard is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>Call us icon_button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 06.199</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:23 PM</td>
-				<td class='step-details'>
-						Call-us icon POP-UP is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
-					<div class='test-heading'>
-						<span class='test-name'>Whatsapp Icon_button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.198</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:29 PM</td>
-				<td class='step-details'>
-						Whatsapp icon is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
-					<div class='test-heading'>
-						<span class='test-name'>View All_Button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.839</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:31 PM</td>
-				<td class='step-details'>
-						View All button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
-					<div class='test-heading'>
-						<span class='test-name'>Request A call_Button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.084</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:37 PM</td>
-				<td class='step-details'>
-						Request A call_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>View All Stay_Button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.805</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:39 PM</td>
-				<td class='step-details'>
-						View All Stay_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
-					<div class='test-heading'>
-						<span class='test-name'>View All Blogs_Button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.993</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:42 PM</td>
-				<td class='step-details'>
-						View All Blogs_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
-					<div class='test-heading'>
-						<span class='test-name'>Know More_Button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.712</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:47 PM</td>
-				<td class='step-details'>
-						Know More_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
-					<div class='test-heading'>
-						<span class='test-name'>Apply Now Botton CTA_Button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:33</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 06.114</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:33:55 PM</td>
-				<td class='step-details'>
-						Apply Now Botton CTA is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
-					<div class='test-heading'>
-						<span class='test-name'>About us_Button</span>
-						<span class='test-time'>15-10-2024 17:33</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:33</span>
-	<span class='label end-time'>15-10-2024 17:34</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.584</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:34:02 PM</td>
-				<td class='step-details'>
-						About us Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
-					<div class='test-heading'>
-						<span class='test-name'>CareerServices_Button</span>
-						<span class='test-time'>15-10-2024 17:34</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:34</span>
-	<span class='label end-time'>15-10-2024 17:34</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.307</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:34:08 PM</td>
-				<td class='step-details'>
-						CareerServices_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
-					<div class='test-heading'>
-						<span class='test-name'>Student Stories_Button</span>
-						<span class='test-time'>15-10-2024 17:34</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:34</span>
-	<span class='label end-time'>15-10-2024 17:34</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.518</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:34:15 PM</td>
-				<td class='step-details'>
-						StudentStories_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
-					<div class='test-heading'>
-						<span class='test-name'>Leadership_Button</span>
-						<span class='test-time'>15-10-2024 17:34</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:34</span>
-	<span class='label end-time'>15-10-2024 17:34</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.352</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:34:21 PM</td>
-				<td class='step-details'>
-						Leadership is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
-					<div class='test-heading'>
-						<span class='test-name'>Corporate_Button</span>
-						<span class='test-time'>15-10-2024 17:34</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:34</span>
-	<span class='label end-time'>15-10-2024 17:34</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.644</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:34:28 PM</td>
-				<td class='step-details'>
-						Corporate_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
-					<div class='test-heading'>
-						<span class='test-name'>Contact us_Button</span>
-						<span class='test-time'>15-10-2024 17:34</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:34</span>
-	<span class='label end-time'>15-10-2024 17:34</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.353</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:34:36 PM</td>
-				<td class='step-details'>
-						Contact us_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
-					<div class='test-heading'>
-						<span class='test-name'>TermsandConditions_Button</span>
-						<span class='test-time'>15-10-2024 17:34</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:34</span>
-	<span class='label end-time'>15-10-2024 17:34</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.541</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:34:42 PM</td>
-				<td class='step-details'>
-						TermsandConditions_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
-					<div class='test-heading'>
-						<span class='test-name'>StudentSupport_Button</span>
-						<span class='test-time'>15-10-2024 17:34</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:34</span>
-	<span class='label end-time'>15-10-2024 17:34</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 04.551</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:34:51 PM</td>
-				<td class='step-details'>
-						StudentSupport_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
-					<div class='test-heading'>
-						<span class='test-name'>IntellectualProperty_Button</span>
-						<span class='test-time'>15-10-2024 17:34</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:34</span>
-	<span class='label end-time'>15-10-2024 17:35</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 06.809</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:35:02 PM</td>
-				<td class='step-details'>
-						IntellectualProperty_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
-					<div class='test-heading'>
-						<span class='test-name'>UGCApprovals_Button</span>
-						<span class='test-time'>15-10-2024 17:35</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:35</span>
-	<span class='label end-time'>15-10-2024 17:35</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.990</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:35:09 PM</td>
-				<td class='step-details'>
-						UGCApprovals_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
-					<div class='test-heading'>
-						<span class='test-name'>Resource_Button</span>
-						<span class='test-time'>15-10-2024 17:35</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:35</span>
-	<span class='label end-time'>15-10-2024 17:35</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 04.273</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:35:17 PM</td>
-				<td class='step-details'>
-						Resource_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
-					<div class='test-heading'>
-						<span class='test-name'>Blog_Button</span>
-						<span class='test-time'>15-10-2024 17:35</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:35</span>
-	<span class='label end-time'>15-10-2024 17:35</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 02.384</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:35:24 PM</td>
-				<td class='step-details'>
-						Blog_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
-					<div class='test-heading'>
-						<span class='test-name'>Media_Button</span>
-						<span class='test-time'>15-10-2024 17:35</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:35</span>
-	<span class='label end-time'>15-10-2024 17:35</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 04.498</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:35:32 PM</td>
-				<td class='step-details'>
-						Media_Button is working
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofComputerApplications_Program</span>
-						<span class='test-time'>15-10-2024 17:35</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:35</span>
-	<span class='label end-time'>15-10-2024 17:35</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.575</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:35:40 PM</td>
-				<td class='step-details'>
-						BachelorofComputerApplications_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='32'>
-					<div class='test-heading'>
-						<span class='test-name'>BCAwithspecializationinCloudandSecurity_Program</span>
-						<span class='test-time'>15-10-2024 17:35</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:35</span>
-	<span class='label end-time'>15-10-2024 17:35</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.565</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:35:45 PM</td>
-				<td class='step-details'>
-						BCAwithspecializationinCloudandSecurity_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
-					<div class='test-heading'>
-						<span class='test-name'>BCAwithspecializationinDataAnalytics_Program</span>
-						<span class='test-time'>15-10-2024 17:35</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:35</span>
-	<span class='label end-time'>15-10-2024 17:35</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.442</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:35:51 PM</td>
-				<td class='step-details'>
-						BCAwithspecializationinDataAnalytics_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='34'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofBusinessAdministration_Program</span>
-						<span class='test-time'>15-10-2024 17:35</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:35</span>
-	<span class='label end-time'>15-10-2024 17:35</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.400</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:35:56 PM</td>
-				<td class='step-details'>
-						BachelorofBusinessAdministration_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtsJournalismandMasscommunication_Program</span>
-						<span class='test-time'>15-10-2024 17:35</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:35</span>
-	<span class='label end-time'>15-10-2024 17:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.433</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:36:02 PM</td>
-				<td class='step-details'>
-						BachelorofArtsJournalismandMasscommunication_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofCommerce_Program</span>
-						<span class='test-time'>15-10-2024 17:36</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:36</span>
-	<span class='label end-time'>15-10-2024 17:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.519</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:36:08 PM</td>
-				<td class='step-details'>
-						BachelorofCommerce_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='37'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArts_Program</span>
-						<span class='test-time'>15-10-2024 17:36</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:36</span>
-	<span class='label end-time'>15-10-2024 17:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.382</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:36:14 PM</td>
-				<td class='step-details'>
-						BachelorofArts_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='38'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtKannadaMedium_Program</span>
-						<span class='test-time'>15-10-2024 17:36</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:36</span>
-	<span class='label end-time'>15-10-2024 17:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.767</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:36:20 PM</td>
-				<td class='step-details'>
-						BachelorofArtKannadaMedium_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='39'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtsMalayalamMedium_Program</span>
-						<span class='test-time'>15-10-2024 17:36</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:36</span>
-	<span class='label end-time'>15-10-2024 17:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.837</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:36:26 PM</td>
-				<td class='step-details'>
-						BachelorofArtsMalayalamMedium_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='40'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtsTamilMedium_Program</span>
-						<span class='test-time'>15-10-2024 17:36</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:36</span>
-	<span class='label end-time'>15-10-2024 17:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.541</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:36:32 PM</td>
-				<td class='step-details'>
-						BachelorofArtsTamilMedium_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtsTeluguMedium_Program</span>
-						<span class='test-time'>15-10-2024 17:36</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:36</span>
-	<span class='label end-time'>15-10-2024 17:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.620</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:36:38 PM</td>
-				<td class='step-details'>
-						BachelorofArtsTeluguMedium_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='42'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtsHindiMedium_Program</span>
-						<span class='test-time'>15-10-2024 17:36</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:36</span>
-	<span class='label end-time'>15-10-2024 17:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.603</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:36:45 PM</td>
-				<td class='step-details'>
-						BachelorofArtsHindiMedium_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='43'>
-					<div class='test-heading'>
-						<span class='test-name'>BComwithSpecializationinInternationalFinanceandAccounting_Program</span>
-						<span class='test-time'>15-10-2024 17:36</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:36</span>
-	<span class='label end-time'>15-10-2024 17:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.629</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:36:50 PM</td>
-				<td class='step-details'>
-						BComwithSpecializationinInternationalFinanceandAccounting_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='44'>
-					<div class='test-heading'>
 						<span class='test-name'>BachelorOfCommerceHonours_Program</span>
-						<span class='test-time'>15-10-2024 17:36</span>
+						<span class='test-time'>15-10-2024 17:50</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 17:36</span>
-	<span class='label end-time'>15-10-2024 17:36</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.361</span>
+	<span class='label start-time'>15-10-2024 17:50</span>
+	<span class='label end-time'>15-10-2024 17:50</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 03.583</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -1662,7 +321,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>5:36:56 PM</td>
+				<td class='timestamp'>5:50:13 PM</td>
 				<td class='step-details'>
 						BachelorOfCommerceHonours_Program url is verified
 				</td>
@@ -1695,7 +354,127 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-10-2024 17:49</td>
+										<td class='linked' test-id='1'>BachelorofArtsHindiMedium_Program</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: Assertion error occurred: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at Amity.Online.Module1_FunctionalTesting.BachelorofArtsHindiMedium(Module1_FunctionalTesting.java:1922)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>15-10-2024 17:50</td>
+										<td class='linked' test-id='2'>BComwithSpecializationinInternationalFinanceandAccounting_Program</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: Assertion error occurred: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at Amity.Online.Module1_FunctionalTesting.BachelorofArtsHindiMedium(Module1_FunctionalTesting.java:1922)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -1703,7 +482,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>44</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -1715,19 +494,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>15-10-2024 17:32</div>
+					<div class='panel-lead'>15-10-2024 17:49</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>15-10-2024 17:36</div>
+			 		<div class='panel-lead'>15-10-2024 17:50</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 04 20.762</div>
+					<div class='panel-lead'>00 00 21.004</div>
 				</div>
 			</div>
 		</div>
@@ -1738,9 +517,9 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 44,
-				passParent: 44,
-				failParent: 0,
+                parentCount: 3,
+				passParent: 1,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
@@ -1766,7 +545,7 @@
 		
 		<script>
 			var timeline = {
-			        "Amity_Logo":0.056,"Program_Button":2.218,"Career_Services":2.23,"Advantages_Button":0.547,"Search_Button":0.078,"Call Us_Header button":2.203,"Student Login_Header Button":2.12,"Enroll Now_Header Button":2.346,"Apply Now_button Herocard":5.207,"Call us icon_button":6.199,"Whatsapp Icon_button":3.198,"View All_Button":0.839,"Request A call_Button":3.084,"View All Stay_Button":0.805,"View All Blogs_Button":0.993,"Know More_Button":2.712,"Apply Now Botton CTA_Button":6.114,"About us_Button":2.584,"CareerServices_Button":2.307,"Student Stories_Button":2.518,"Leadership_Button":2.352,"Corporate_Button":2.644,"Contact us_Button":3.353,"TermsandConditions_Button":2.541,"StudentSupport_Button":4.551,"IntellectualProperty_Button":6.809,"UGCApprovals_Button":2.99,"Resource_Button":4.273,"Blog_Button":2.384,"Media_Button":4.498,"BachelorofComputerApplications_Program":3.575,"BCAwithspecializationinCloudandSecurity_Program":3.565,"BCAwithspecializationinDataAnalytics_Program":3.442,"BachelorofBusinessAdministration_Program":3.4,"BachelorofArtsJournalismandMasscommunication_Program":3.433,"BachelorofCommerce_Program":3.519,"BachelorofArts_Program":3.382,"BachelorofArtKannadaMedium_Program":3.767,"BachelorofArtsMalayalamMedium_Program":3.837,"BachelorofArtsTamilMedium_Program":3.541,"BachelorofArtsTeluguMedium_Program":3.62,"BachelorofArtsHindiMedium_Program":3.603,"BComwithSpecializationinInternationalFinanceandAccounting_Program":3.629,"BachelorOfCommerceHonours_Program":3.361
+			        "BachelorofArtsHindiMedium_Program":4.206,"BComwithSpecializationinInternationalFinanceandAccounting_Program":5.099,"BachelorOfCommerceHonours_Program":3.583
 			};
 		</script>
 		

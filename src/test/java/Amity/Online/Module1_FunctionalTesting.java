@@ -1799,6 +1799,8 @@ public class Module1_FunctionalTesting {
 
 	}
 
+	
+
 	@Test(priority = 40)
 	//Bachelor of Arts (Tamil Medium)
 	public void BachelorofArtsTamilMedium() throws InterruptedException {
@@ -1880,7 +1882,7 @@ public class Module1_FunctionalTesting {
 
 		}
 
-	}
+	}  
 
 	@Test(priority = 42)
 	//Bachelor of Arts (Hindi Medium)
@@ -1892,7 +1894,7 @@ public class Module1_FunctionalTesting {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", BAHindi);
 			Thread.sleep(3000);
-			String ExpBAHindi = "https://amityonline.com/bachelor-of-arts-hindi-medium-online";
+			String ExpBAHindi = "https://amityonline.com/bachelor-of-arts-hindi-medium-onlin";
 			if(driver.getCurrentUrl().equals(ExpBAHindi)) {
 				test.log(Status.PASS, "BachelorofArtsHindiMedium_Program url is verified");
 				System.out.println("BachelorofArtsHindiMedium_Program url is verified");
@@ -1933,7 +1935,7 @@ public class Module1_FunctionalTesting {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", BcomFinance);
 			Thread.sleep(3000);
-			String ExpBcomFinance = "https://amityonline.com/bcom-internationalfinance";
+			String ExpBcomFinance = "https://amityonline.com/bcom-internationalfinanc";
 			if(driver.getCurrentUrl().equals(ExpBcomFinance)) {
 				test.log(Status.PASS, "BComwithSpecializationinInternationalFinanceandAccounting_Program url is verified");
 				System.out.println("BComwithSpecializationinInternationalFinanceandAccounting_Program url is verified");
@@ -1963,6 +1965,8 @@ public class Module1_FunctionalTesting {
 		}
 
 	}
+	
+	
 
 	@Test(priority = 44)
 	//Bachelor Of Commerce (Honours)
