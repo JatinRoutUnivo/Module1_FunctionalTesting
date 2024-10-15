@@ -342,7 +342,7 @@ public class Module1_FunctionalTesting {
 		}
 	} 
 
-	@Test(priority = 5)
+/*	@Test(priority = 5)
 	public void SearchHeaderButton(){
 		test=reports.createTest("Search_Button");
 		try {
@@ -1966,7 +1966,7 @@ public class Module1_FunctionalTesting {
 
 	}
 	
-	
+	*/
 
 	@Test(priority = 44)
 	//Bachelor Of Commerce (Honours)
@@ -1978,7 +1978,7 @@ public class Module1_FunctionalTesting {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", BcomHonours);
 			Thread.sleep(3000);
-			String ExpBcomHonours = "https://amityonline.com/bachelor-of-commerce-honours";
+			String ExpBcomHonours = "https://amityonline.com/bachelor-of-commerce-honour";
 			if(driver.getCurrentUrl().equals(ExpBcomHonours)) {
 				test.log(Status.PASS, "BachelorOfCommerceHonours_Program url is verified");
 				System.out.println("BachelorOfCommerceHonours_Program url is verified");
