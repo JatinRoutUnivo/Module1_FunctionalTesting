@@ -342,7 +342,7 @@ public class Module1_FunctionalTesting {
 		}
 	} 
 
-/*	@Test(priority = 5)
+	@Test(priority = 5)
 	public void SearchHeaderButton(){
 		test=reports.createTest("Search_Button");
 		try {
@@ -1966,7 +1966,7 @@ public class Module1_FunctionalTesting {
 
 	}
 	
-	*/
+	v
 
 	@Test(priority = 44)
 	//Bachelor Of Commerce (Honours)
