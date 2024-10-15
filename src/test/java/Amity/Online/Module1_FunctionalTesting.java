@@ -1978,7 +1978,7 @@ public class Module1_FunctionalTesting {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", BcomHonours);
 			Thread.sleep(3000);
-			String ExpBcomHonours = "https://amityonline.com/bachelor-of-commerce-honour";
+			String ExpBcomHonours = "https://amityonline.com/bachelor-of-commerce-honours";
 			if(driver.getCurrentUrl().equals(ExpBcomHonours)) {
 				test.log(Status.PASS, "BachelorOfCommerceHonours_Program url is verified");
 				System.out.println("BachelorOfCommerceHonours_Program url is verified");
