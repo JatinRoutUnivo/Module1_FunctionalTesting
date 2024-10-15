@@ -1933,7 +1933,7 @@ public class Module1_FunctionalTesting {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", BcomFinance);
 			Thread.sleep(3000);
-			String ExpBcomFinance = "https://amityonline.com/bcom-internationalfinance";
+			String ExpBcomFinance = "https://amityonline.com/bcom-internationalfinanc";
 			if(driver.getCurrentUrl().equals(ExpBcomFinance)) {
 				test.log(Status.PASS, "BComwithSpecializationinInternationalFinanceandAccounting_Program url is verified");
 				System.out.println("BComwithSpecializationinInternationalFinanceandAccounting_Program url is verified");
@@ -1972,7 +1972,7 @@ public class Module1_FunctionalTesting {
 		test=reports.createTest("BachelorOfCommerceHonours_Program");
 		try {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
-			js.executeScript("arguments[0].click();", BcomHonours);
+			js.executeScript("arguments[0].click();", BcomHonour);
 			Thread.sleep(3000);
 			String ExpBcomHonours = "https://amityonline.com/bachelor-of-commerce-honours";
 			if(driver.getCurrentUrl().equals(ExpBcomHonours)) {
