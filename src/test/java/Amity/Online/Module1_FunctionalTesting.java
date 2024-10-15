@@ -247,6 +247,7 @@ public class Module1_FunctionalTesting {
 		try {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", programButtonElement);
+			Thread.sleep(2000);
 			WebElement Allprograms = driver.findElement(By.xpath("//body/header[contains(@class,'container z-[1]')]/div[contains(@class,'mt-2 bg-primary-blue text-white mb-3 xl:mt-5 xl:flex xl:justify-between xl:items-center header_containerRadius__HLowV')]/div[contains(@class,'header_desktopMenu__TgI48')]/div[contains(@class,'header_menuContainer__00BgW')]/div[contains(@class,'flex items-center group w-max header_menuItem__2qruK')]/div[contains(@class,'container w-full fixed header_programMenu__D5RVR')]/div[contains(@class,'ProgramsMenu_container__RPdmP program-menu rounded-2xl relative')]/div[2]/div[1]"));
 			if(Allprograms.getText().equals("All Programs")) {			
 				test.log(Status.PASS, "Program button is working");
