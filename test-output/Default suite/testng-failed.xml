@@ -6,11 +6,10 @@
       <class name="Amity.Online.Module1_FunctionalTesting">
         <methods>
           <include name="GenerateReport"/>
-          <include name="BachelorofArtsHindiMedium"/>
           <include name="CloseBrowser"/>
-          <include name="BComwithSpecializationinInternationalFinanceandAccounting"/>
           <include name="LaunchBrowser"/>
           <include name="CloseReport"/>
+          <include name="AmityLogo"/>
         </methods>
       </class> <!-- Amity.Online.Module1_FunctionalTesting -->
     </classes>

@@ -30,149 +30,8 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Module1_FunctionalTesting {
+public class Module1_FunctionalTesting extends POM {
 
-	WebDriver driver;
-	ExtentHtmlReporter reporter;
-	ExtentReports reports;
-	ExtentTest test;
-
-	@FindBy(xpath = "//img[@alt='amity-logo']")   //Amity Logo
-	WebElement amitylogoElement;
-
-	@FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]") //ProgramButton
-	WebElement programButtonElement;
-
-	@FindBy(xpath = "//span[@class='mr-1 uppercase laptop:font-medium header_menuText__KlhzO'][normalize-space()='CAREER SERVICES']") //Career Services
-	WebElement careerServicesButttonElement;
-
-	@FindBy(xpath = "//span[@class='mr-1 uppercase laptop:font-medium header_menuText__KlhzO'][normalize-space()='ADVANTAGES']") //Advantages
-	WebElement advanragesButtonElement;
-
-	@FindBy(xpath = "//div[@class='header_searchIcon__bLdgL header_searchIconNew__5aGyK']") //SearechButton
-	WebElement SearchButtonElement;
-
-	@FindBy(xpath = "//span[@class='font-bold mr-0']")  //Call us
-	WebElement callUsElement;
-
-	@FindBy(xpath = "//button[contains(@class,'button_root__RRK9v header_mr__77w6i header_studentLogin__AsDQf headFootSprite button_w__W8vEM button_o__u2jyu')]//span[contains(@class,'uppercase font-raleway')][normalize-space()='STUDENT LOGIN']") //Student login
-	WebElement StudentLoginElement;
-
-	@FindBy(xpath = "//a[contains(@class,'button_root__RRK9v header_mr__77w6i button_y__dAepQ')]//span[contains(@class,'uppercase font-raleway')][normalize-space()='ENROLL NOW']")  //Enroll Now
-	WebElement enrollNowButtonElement;
-
-	@FindBy(xpath = "//div[@class='swiper-slide swiper-slide-active']//div[@class='HeroCarousel_HearoCarousel__gradient__oBG4Y']//div[@class='HeroCarousel_HearoCarousel__content__0LDqL']//div//span[@class='uppercase font-raleway'][normalize-space()='Apply Now']")  //Apply Now
-	WebElement applyNoWebElement;
-
-	@FindBy(xpath = "//img[@alt='call-button']")  //Callicon
-	WebElement CalliconElement;
-
-	@FindBy(xpath = "//img[@alt='whatsapp-link']")  //Whatsapp
-	WebElement whatsappIconElement;
-
-	@FindBy(xpath = "//div[@class='styles_ctaBtn__BqEmG']//a[@class='button_root__RRK9v button_b__2Obj5 button_o__u2jyu']")  //ViewAll
-	WebElement viewAllElement;
-
-	@FindBy(xpath = "//button[@class='button_root__RRK9v BannerCard_ctaBtn__FMctQ button_w__W8vEM button_o__u2jyu']")  //Request a call
-	WebElement requestaCallElement;
-
-	@FindBy(xpath = "//a[@href='/news']//span[@class='uppercase font-raleway'][normalize-space()='View all']")  //View all Stay
-	WebElement viewallStayElement;
-
-	@FindBy(xpath = "//a[@href='/blog']//span[@class='uppercase font-raleway'][normalize-space()='View all']")  //View all blog
-	WebElement viewallBlogElement;
-
-	@FindBy(xpath = "//span[normalize-space()='KNOW MORE']")  // Know more element
-	WebElement knowMorElement;
-
-	@FindBy(xpath = "//a[@class='button_root__RRK9v BannerCard_ctaBtn__FMctQ button_y__dAepQ']//span[@class='uppercase font-raleway'][normalize-space()='Apply Now']")  // Apply Now CTA
-	WebElement apllyNowCTAlElement;
-
-	@FindBy(xpath = "//span[normalize-space()='show more']")  // show more element
-	WebElement showMorElement;
-
-	@FindBy(xpath = "//a[normalize-space()='About us']")  // About us
-	WebElement aboutusElement;
-
-	@FindBy(xpath = "//a[normalize-space()='Career services']")  // Career Services
-	WebElement careerServicesElement;
-
-	@FindBy(xpath = "//a[normalize-space()='Student stories']")  // Student Stories 
-	WebElement Studentstories;
-
-	@FindBy(xpath = "//a[normalize-space()='Leadership']")  // Leadership 
-	WebElement leadershipelement;
-
-	@FindBy(xpath = "//a[normalize-space()='Corporate']")  // Corporate 
-	WebElement corporate;
-
-	@FindBy(xpath = "//a[normalize-space()='Contact us']")  // Contact-us 
-	WebElement contactus;
-
-	@FindBy(xpath = "//a[normalize-space()='T & C']")  // T&C 
-	WebElement terms;
-
-	@FindBy(xpath = "//a[normalize-space()='Student support']")  // Student Support 
-	WebElement studentSupportElement;
-
-	@FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[1]/li[9]/a[1]")  // Intellectual property 
-	WebElement Intellectualproperty;
-
-	@FindBy(xpath = "//a[normalize-space()='UGC Approvals']")  // UGC Approvals
-	WebElement UGC;
-
-	@FindBy(xpath = "//a[normalize-space()='Resources']")  // Resources
-	WebElement resources;
-
-	@FindBy(xpath = "//a[normalize-space()='Blog']")  // Blog
-	WebElement Blog;
-
-	@FindBy(xpath = "//a[normalize-space()='Media']")  // Media
-	WebElement media;
-
-	//////////--------------------------UG Programs------------------------------------//////////////////////////////////////////////////
-
-	@FindBy(xpath = "//a[normalize-space()='Bachelor of Computer Applications']")  // Bachelor of Computer Applications
-	WebElement BCAprogram;
-
-	@FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[2]/li[3]/a[1]")  // BCA with specialization in Cloud & Security
-	WebElement BCASpec;
-
-	@FindBy(xpath = "//a[normalize-space()='BCA with specialization in Data Analytics']")  // BCA with specialization in Data Analytics
-	WebElement BCAdataAnalytics;
-
-	@FindBy(xpath = "//a[normalize-space()='Bachelor of Business Administration']")  // Bachelor of Business Administration
-	WebElement BBA;
-
-	@FindBy(xpath = "//a[contains(text(),'Bachelor of Arts (Journalism and Mass communicatio')]")  // Bachelor of Arts (Journalism and Mass communication)
-	WebElement BAJandM;
-
-	@FindBy(xpath = "//a[normalize-space()='Bachelor of Commerce']")  // Bachelor of Commerce
-	WebElement Bcom;
-
-	@FindBy(xpath = "//a[normalize-space()='Bachelor of Arts']")  // Bachelor of Arts
-	WebElement BA;
-
-	@FindBy(xpath = "//a[normalize-space()='Bachelor of Art (Kannada Medium)']")  // Bachelor of Art (Kannada Medium)
-	WebElement BAKannada;
-
-	@FindBy(xpath = "//a[normalize-space()='Bachelor of Arts (Malayalam Medium)']")  // Bachelor of Arts (Malayalam Medium)
-	WebElement BAMalayalam;
-
-	@FindBy(xpath = "//a[normalize-space()='Bachelor of Arts (Tamil Medium)']")  // Bachelor of Arts (Tamil Medium)
-	WebElement BATamil;
-
-	@FindBy(xpath = "//a[normalize-space()='Bachelor of Arts (Telugu Medium)']")  // Bachelor of Arts (Telugu Medium)
-	WebElement BATelugu;
-
-	@FindBy(xpath = "//a[normalize-space()='Bachelor of Arts (Hindi Medium)']")  // Bachelor of Arts (Hindi Medium)
-	WebElement BAHindi;
-
-	@FindBy(xpath = "//a[contains(text(),'B.Com with Specialization in International Finance')]")  // B.Com with Specialization in International Finance & Accounting
-	WebElement BcomFinance;
-
-	@FindBy(xpath = "//a[normalize-space()='Bachelor Of Commerce (Honours)']")  // Bachelor Of Commerce (Honours)
-	WebElement BcomHonours;
 
 	@BeforeTest
 	public void GenerateReport() {
@@ -223,6 +82,7 @@ public class Module1_FunctionalTesting {
 
 	}
 
+
 	@Test (priority = 1)
 
 	public void AmityLogo() {
@@ -253,7 +113,7 @@ public class Module1_FunctionalTesting {
 				test.log(Status.PASS, "Program button is working");
 				System.out.println("Program button is working");
 				Assert.assertTrue(true);
-
+				
 			}
 			else {
 				test.log(Status.FAIL, "Program button is not working");
@@ -290,7 +150,7 @@ public class Module1_FunctionalTesting {
 			driver.switchTo().window(handle6.get(1));
 			String CareerServicesURL = "https://amityonline.com/career-services";
 			String ActualURL = driver.getCurrentUrl();
-			if(ActualURL.equals(CareerServicesURL)) {
+			if(ActualURL.equals(CareerServicesURL)) { 
 				test.log(Status.PASS, "Career Service Button is working");
 				System.out.println("Career Service Button is working");
 				Assert.assertTrue(true);
@@ -451,23 +311,29 @@ public class Module1_FunctionalTesting {
 
 		}
 	}
+	
+	
 
 
 	@Test(priority = 8)
-	public void EnrollNowHeaderButton(){
+	public void ApplyNowHeaderButton(){
 		test=reports.createTest("Enroll Now_Header Button");
 		try {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
-			js.executeScript("arguments[0].click();", enrollNowButtonElement);
-			String Expectedurl = "https://application.amityonline.com/admission/home/signup";
-			if(driver.getCurrentUrl().equals(Expectedurl)) {
-				test.log(Status.PASS, "Enroll Now Button is working");
-				System.out.println("Enroll Now Button is working");
+			js.executeScript("arguments[0].click();", applyNowButtonElementHeaderbutton);
+			Thread.sleep(3000);
+			String handle10 = driver.getWindowHandle();
+			driver.switchTo().window(handle10);
+			Thread.sleep(3000);
+			WebElement text = driver.findElement(By.xpath("//h2[normalize-space()='Connect with our counsellor']"));
+			if(text.getText().equals("Connect With Our Counsellor")) {
+				test.log(Status.PASS, "Apply Now Header Button is working");
+				System.out.println("Apply Now Header Button is working");
 				Assert.assertTrue(true);
 
 			}else {
-				test.log(Status.FAIL, "Enroll Now Button is not working");
-				System.out.println("Enroll Now Button is not working");
+				test.log(Status.FAIL, "Apply Now Header Button is not working");
+				System.out.println("Apply Now Header Button is not working");
 				Assert.assertTrue(false);
 
 			}
@@ -529,6 +395,7 @@ public class Module1_FunctionalTesting {
 
 		}
 	}  
+
 
 
 
@@ -829,27 +696,29 @@ public class Module1_FunctionalTesting {
 
 		}
 	}
+	
+	
 
 	@Test(priority = 17)
-	public void ApplyNowButtonCTAs() throws InterruptedException {
-		test=reports.createTest("Apply Now Botton CTA_Button");
+	public void ApplyNowButtonBlueBanner() throws InterruptedException {
+		test=reports.createTest("Apply Now Botton BlueBanner");
 		try {
 			Actions act6=new Actions(driver);
-			act6.moveToElement(apllyNowCTAlElement).click().perform();
+			act6.moveToElement(apllyNowButtonBlueBanner).click().perform();
 			Thread.sleep(4000);
-			Set<String> windowhandle9 = driver.getWindowHandles();
-			List<String> handle9 = new ArrayList<String>();
-			handle9.addAll(windowhandle9);
-			driver.switchTo().window(handle9.get(0));
-			String applynowbottomexpectedURL = "https://application.amityonline.com/admission/home/signup";
-			if(driver.getCurrentUrl().equals(applynowbottomexpectedURL)) {
-				test.log(Status.PASS, "Apply Now Botton CTA is working");
-				System.out.println("Apply Now Botton CTA is working");
+			String handle11 = driver.getWindowHandle();
+			driver.switchTo().window(handle11);
+			
+			WebElement text2 = driver.findElement(By.xpath("//h2[normalize-space()='Connect with our counsellor']"));
+			
+			if(text2.getText().equals("Connect With Our Counsellor")) {
+				test.log(Status.PASS, "Apply Now Botton BlueBanner is working");
+				System.out.println("Apply Now Botton BlueBanner is working");
 
 				Assert.assertTrue(true);
 			}else {
-				test.log(Status.FAIL, "Apply Now Botton CTA is not working");
-				System.out.println("Apply Now Botton CTA is not working");
+				test.log(Status.FAIL, "Apply Now Botton BlueBanner is not working");
+				System.out.println("Apply Now Botton BlueBanner is not working");
 				Assert.assertTrue(false);
 
 			}
@@ -871,6 +740,8 @@ public class Module1_FunctionalTesting {
 		}
 		driver.close();
 	}  
+	
+	
 
 	@Test(priority = 18)
 	public void Aboutus() throws InterruptedException{
@@ -1309,7 +1180,7 @@ public class Module1_FunctionalTesting {
 			Assert.assertTrue(resources.isEnabled(), "Resource_Button is not enabled");
 			Actions act18=new Actions(driver);
 			act18.moveToElement(resources).click().perform();
-			Thread.sleep(4000);
+			Thread.sleep(5000);
 			String resourcesexpurl = "https://amityonline.com/";
 			if(driver.getCurrentUrl().equals(resourcesexpurl)) {
 				test.log(Status.PASS, "Resource_Button is working");
@@ -1894,7 +1765,7 @@ public class Module1_FunctionalTesting {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", BAHindi);
 			Thread.sleep(3000);
-			String ExpBAHindi = "https://amityonline.com/bachelor-of-arts-hindi-medium-onlin";
+			String ExpBAHindi = "https://amityonline.com/bachelor-of-arts-hindi-medium-online";
 			if(driver.getCurrentUrl().equals(ExpBAHindi)) {
 				test.log(Status.PASS, "BachelorofArtsHindiMedium_Program url is verified");
 				System.out.println("BachelorofArtsHindiMedium_Program url is verified");
@@ -1935,7 +1806,7 @@ public class Module1_FunctionalTesting {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", BcomFinance);
 			Thread.sleep(3000);
-			String ExpBcomFinance = "https://amityonline.com/bcom-internationalfinanc";
+			String ExpBcomFinance = "https://amityonline.com/bcom-internationalfinance";
 			if(driver.getCurrentUrl().equals(ExpBcomFinance)) {
 				test.log(Status.PASS, "BComwithSpecializationinInternationalFinanceandAccounting_Program url is verified");
 				System.out.println("BComwithSpecializationinInternationalFinanceandAccounting_Program url is verified");
