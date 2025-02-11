@@ -33,16 +33,16 @@ public class POM {
 	@FindBy(xpath = "//span[@class='font-bold mr-0']")  //Call us
 	WebElement callUsElement;
 
-	@FindBy(xpath = "//button[contains(@class,'button_root__RRK9v header_mr__77w6i header_studentLogin__AsDQf headFootSprite button_w__W8vEM button_o__u2jyu')]//span[contains(@class,'uppercase font-raleway')][normalize-space()='STUDENT LOGIN']") //Student login
+	@FindBy(xpath = "//button[@class='header_login__wzVUA']") //Student login
 	WebElement StudentLoginElement;
 
-	@FindBy(xpath = "//button[@class='button_root__RRK9v header_mr__77w6i button_y__dAepQ']//span[@class='uppercase font-raleway'][normalize-space()='APPLY NOW']")  //Apply Now
+	@FindBy(xpath = "//button[@class='button_root__RRK9v header_mr__77w6i button_y__dAepQ']//span[@class='uppercase font-raleway'][normalize-space()='Apply Now']")  //Apply Now
 	WebElement applyNowButtonElementHeaderbutton;
 
-	@FindBy(xpath = "//div[@class='swiper-slide swiper-slide-active']//div[@class='HeroCarousel_HearoCarousel__gradient__oBG4Y']//div[@class='carousel-caption']//div[@class='banner-content']//div//span[@class='uppercase font-raleway'][normalize-space()='Apply Now']")  //Apply Now
+	@FindBy(xpath = "//div[@class='swiper-slide swiper-slide-active']//div[@class='HeroCarousel_HearoCarousel__gradient__oBG4Y']//div[@class='carousel-caption']//div[@class='banner-content']//div//span[contains(text(),'APPLY NOW')]")  //Apply Now
 	WebElement applyNoWebElement;
 
-	@FindBy(xpath = "//img[@alt='call-button']")  //Callicon
+	@FindBy(xpath = "//img[@id='call-icon']")  //Callicon
 	WebElement CalliconElement;
 
 	@FindBy(xpath = "//img[@alt='whatsapp-link']")  //Whatsapp
@@ -51,8 +51,8 @@ public class POM {
 	@FindBy(xpath = "//div[@class='styles_ctaBtn__BqEmG']//a[@class='button_root__RRK9v button_b__2Obj5 button_o__u2jyu']")  //ViewAll
 	WebElement viewAllElement;
 
-	@FindBy(xpath = "//button[@class='button_root__RRK9v BannerCard_ctaBtn__FMctQ button_w__W8vEM button_o__u2jyu']")  //Request a call
-	WebElement requestaCallElement;
+	@FindBy(xpath = "//body/main/section[8]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]")  //Request a call
+	WebElement requestaCallElementNowApplyNow;
 
 	@FindBy(xpath = "//a[@href='/news']//span[@class='uppercase font-raleway'][normalize-space()='View all']")  //View all Stay
 	WebElement viewallStayElement;
@@ -63,7 +63,7 @@ public class POM {
 	@FindBy(xpath = "//span[normalize-space()='KNOW MORE']")  // Know more element
 	WebElement knowMorElement;
 
-	@FindBy(xpath = "//button[@class='button_root__RRK9v BannerCard_ctaBtn__FMctQ button_y__dAepQ']//span[@class='uppercase font-raleway'][normalize-space()='Apply Now']")  // Apply Now CTA, Blue Banner
+	@FindBy(xpath = "//body/main/section[12]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]")  // Apply Now CTA, Blue Banner
 	WebElement apllyNowButtonBlueBanner;
 
 	@FindBy(xpath = "//span[normalize-space()='show more']")  // show more element
@@ -87,8 +87,8 @@ public class POM {
 	@FindBy(xpath = "//a[normalize-space()='Contact us']")  // Contact-us 
 	WebElement contactus;
 
-	@FindBy(xpath = "//a[normalize-space()='T & C']")  // T&C 
-	WebElement terms;
+	@FindBy(xpath = "//a[normalize-space()='Privacy Policy']")  // T&C 
+	WebElement privacyElement;
 
 	@FindBy(xpath = "//a[normalize-space()='Student support']")  // Student Support 
 	WebElement studentSupportElement;

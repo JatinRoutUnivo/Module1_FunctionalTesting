@@ -67,7 +67,7 @@ public class Module1_FunctionalTesting extends POM {
 
 		// Setup ChromeOptions to enable headless mode
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("headless"); 
+		options.addArguments("headless");
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.navigate().to("https://amityonline.com/");
@@ -113,7 +113,7 @@ public class Module1_FunctionalTesting extends POM {
 				test.log(Status.PASS, "Program button is working");
 				System.out.println("Program button is working");
 				Assert.assertTrue(true);
-				
+
 			}
 			else {
 				test.log(Status.FAIL, "Program button is not working");
@@ -135,6 +135,9 @@ public class Module1_FunctionalTesting extends POM {
 
 
 	}
+
+
+
 
 
 	@Test(priority = 3)
@@ -202,6 +205,7 @@ public class Module1_FunctionalTesting extends POM {
 		}
 	} 
 
+
 	@Test(priority = 5)
 	public void SearchHeaderButton(){
 		test=reports.createTest("Search_Button");
@@ -230,6 +234,8 @@ public class Module1_FunctionalTesting extends POM {
 
 	}
 
+
+
 	@Test(priority = 6)
 	public void CallusHeaderButton() throws InterruptedException{
 		test=reports.createTest("Call Us_Header button");
@@ -239,7 +245,7 @@ public class Module1_FunctionalTesting extends POM {
 			Thread.sleep(2000);
 			String handle2 = driver.getWindowHandle();
 			driver.switchTo().window(handle2);
-			driver.findElement(By.xpath("//div[@class='border border-blu bg-white padding-0-imp Modal_dialog__e3Pgf']//*[name()='svg']")).click();
+			driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M18.2648 2')]")).click();
 			if(callUsElement.isEnabled()) {
 				test.log(Status.PASS, "Call us button is working");
 				System.out.println("Call us button is working");
@@ -311,8 +317,8 @@ public class Module1_FunctionalTesting extends POM {
 
 		}
 	}
-	
-	
+
+
 
 
 	@Test(priority = 8)
@@ -409,7 +415,7 @@ public class Module1_FunctionalTesting extends POM {
 			String handle4 = driver.getWindowHandle();
 			driver.switchTo().window(handle4);
 			Thread.sleep(4000);
-			WebElement clickcloseusicon = driver.findElement(By.xpath("//div[@class='border border-blu bg-white padding-0-imp Modal_dialog__e3Pgf']//*[name()='svg']"));
+			WebElement clickcloseusicon = driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M18.2648 2')]"));
 			if(clickcloseusicon.isEnabled()) {
 				test.log(Status.PASS, "Call-us icon POP-UP is working");
 				System.out.println("Call-us icon POP-UP is working");
@@ -443,6 +449,8 @@ public class Module1_FunctionalTesting extends POM {
 
 
 	}  
+
+
 
 	@Test(priority = 11)
 	public void WhatsappIcon() throws InterruptedException{
@@ -533,13 +541,12 @@ public class Module1_FunctionalTesting extends POM {
 
 	}
 
-
 	@Test(priority = 13)
 	public void RequestAcallButton() throws InterruptedException{
 		test=reports.createTest("Request A call_Button");
 		try {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
-			js.executeScript("arguments[0].click();", requestaCallElement);
+			js.executeScript("arguments[0].click();", requestaCallElementNowApplyNow);
 			//		Actions act=new Actions(driver);
 			//		act.moveToElement(requestaCallElement).click().perform();
 			String handle6 = driver.getWindowHandle();
@@ -696,8 +703,8 @@ public class Module1_FunctionalTesting extends POM {
 
 		}
 	}
-	
-	
+
+
 
 	@Test(priority = 17)
 	public void ApplyNowButtonBlueBanner() throws InterruptedException {
@@ -708,9 +715,9 @@ public class Module1_FunctionalTesting extends POM {
 			Thread.sleep(4000);
 			String handle11 = driver.getWindowHandle();
 			driver.switchTo().window(handle11);
-			
+
 			WebElement text2 = driver.findElement(By.xpath("//h2[normalize-space()='Connect with our counsellor']"));
-			
+
 			if(text2.getText().equals("Connect With Our Counsellor")) {
 				test.log(Status.PASS, "Apply Now Botton BlueBanner is working");
 				System.out.println("Apply Now Botton BlueBanner is working");
@@ -740,8 +747,8 @@ public class Module1_FunctionalTesting extends POM {
 		}
 		driver.close();
 	}  
-	
-	
+
+
 
 	@Test(priority = 18)
 	public void Aboutus() throws InterruptedException{
@@ -1002,26 +1009,28 @@ public class Module1_FunctionalTesting extends POM {
 		}
 	}
 
+
+
 	@Test(priority = 24)
-	public void TermsandConditions() throws InterruptedException {
+	public void PrivacyPolicy() throws InterruptedException {
 		Actions act7=new Actions(driver);
 		act7.moveToElement(showMorElement).click().perform();
 		Thread.sleep(2000);
-		test=reports.createTest("TermsandConditions_Button");
+		test=reports.createTest("PrivacyPolicy");
 		try {
-			Assert.assertTrue(terms.isEnabled(), "Terms & Conditions option is not enabled");
+			Assert.assertTrue(privacyElement.isEnabled(), "PrivacyPolicy option is not enabled");
 			Actions act14=new Actions(driver);
-			act14.moveToElement(terms).click().perform();
+			act14.moveToElement(privacyElement).click().perform();
 			Thread.sleep(2000);
-			String termsexpurl = "https://amityonline.com/terms-and-conditions";
+			String termsexpurl = "https://amityonline.com/privacy-policy";
 			if(driver.getCurrentUrl().equals(termsexpurl)) {
-				test.log(Status.PASS, "TermsandConditions_Button is working");
-				System.out.println("TermsandConditions_Button is working");
+				test.log(Status.PASS, "PrivacyPolicy_Button is working");
+				System.out.println("PrivacyPolicy_Button is working");
 
 				Assert.assertTrue(true);
 			}else {
-				test.log(Status.FAIL, "TermsandConditions_Button is not working");
-				System.out.println("TermsandConditions_Button is not working");
+				test.log(Status.FAIL, "PrivacyPolicy_Button is not working");
+				System.out.println("PrivacyPolicy_Button is not working");
 
 				Assert.assertTrue(false);
 			}
@@ -1042,6 +1051,9 @@ public class Module1_FunctionalTesting extends POM {
 
 		}
 	}   
+
+
+
 
 	@Test(priority = 25)
 	public void StudentSupport() throws InterruptedException {
@@ -1670,7 +1682,7 @@ public class Module1_FunctionalTesting extends POM {
 
 	}
 
-	
+
 
 	@Test(priority = 40)
 	//Bachelor of Arts (Tamil Medium)
@@ -1836,8 +1848,8 @@ public class Module1_FunctionalTesting extends POM {
 		}
 
 	}
-	
-	
+
+
 
 	@Test(priority = 44)
 	//Bachelor Of Commerce (Honours)
