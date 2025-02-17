@@ -6,9 +6,8 @@
       <class name="Amity.Online.Module1_FunctionalTesting">
         <methods>
           <include name="GenerateReport"/>
-          <include name="CareerServicesHeaderButton"/>
+          <include name="Blog"/>
           <include name="CloseBrowser"/>
-          <include name="AdvantagesHeaderButton"/>
           <include name="LaunchBrowser"/>
           <include name="CloseReport"/>
         </methods>

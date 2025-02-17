@@ -30,13 +30,13 @@ public class POM {
 	@FindBy(xpath = "//div[@class='header_searchIcon__bLdgL header_searchIconNew__5aGyK']") //SearechButton
 	WebElement SearchButtonElement;
 
-	@FindBy(xpath = "//span[@class='font-bold mr-0']")  //Call us
+	@FindBy(xpath = "//button[@class='header_callUs__CyuCp']")  //Call us
 	WebElement callUsElement;
 
 	@FindBy(xpath = "//button[@class='header_login__wzVUA']") //Student login
 	WebElement StudentLoginElement;
 
-	@FindBy(xpath = "//button[@class='button_root__RRK9v header_mr__77w6i button_y__dAepQ']//span[@class='uppercase font-raleway'][normalize-space()='Apply Now']")  //Apply Now
+	@FindBy(xpath = "//div[contains(@class,'header_menuContainer__00BgW')]//span[contains(text(),'APPLY NOW')]")  //Apply Now
 	WebElement applyNowButtonElementHeaderbutton;
 
 	@FindBy(xpath = "//div[@class='swiper-slide swiper-slide-active']//div[@class='HeroCarousel_HearoCarousel__gradient__oBG4Y']//div[@class='carousel-caption']//div[@class='banner-content']//div//span[contains(text(),'APPLY NOW')]")  //Apply Now
@@ -54,10 +54,10 @@ public class POM {
 	@FindBy(xpath = "//body/main/section[8]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]")  //Request a call
 	WebElement requestaCallElementNowApplyNow;
 
-	@FindBy(xpath = "//a[@href='/news']//span[@class='uppercase font-raleway'][normalize-space()='View all']")  //View all Stay
+	@FindBy(xpath = "//a[contains(@href,'/news')]//span[contains(text(),'View all')]")  //View all Stay
 	WebElement viewallStayElement;
 
-	@FindBy(xpath = "//a[@href='/blog']//span[@class='uppercase font-raleway'][normalize-space()='View all']")  //View all blog
+	@FindBy(xpath = "//a[@href='/blog']//span[contains(text(),'View all')]")  //View all blog
 	WebElement viewallBlogElement;
 
 	@FindBy(xpath = "//span[normalize-space()='KNOW MORE']")  // Know more element

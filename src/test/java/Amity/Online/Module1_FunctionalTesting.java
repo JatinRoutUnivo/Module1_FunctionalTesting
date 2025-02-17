@@ -68,6 +68,7 @@ public class Module1_FunctionalTesting extends POM {
 		// Setup ChromeOptions to enable headless mode
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
+		options.addArguments("--disable-notifications");
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.navigate().to("https://amityonline.com/");
@@ -323,7 +324,7 @@ public class Module1_FunctionalTesting extends POM {
 
 	@Test(priority = 8)
 	public void ApplyNowHeaderButton(){
-		test=reports.createTest("Enroll Now_Header Button");
+		test=reports.createTest("Apply Now_Header Button");
 		try {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", applyNowButtonElementHeaderbutton);
@@ -361,6 +362,8 @@ public class Module1_FunctionalTesting extends POM {
 
 		}
 	}
+	
+	
 
 
 
@@ -842,6 +845,8 @@ public class Module1_FunctionalTesting extends POM {
 
 		driver.close();
 	}
+	
+	
 
 	@Test(priority = 20)
 	public void StudentStories() throws InterruptedException {
@@ -853,7 +858,7 @@ public class Module1_FunctionalTesting extends POM {
 			Assert.assertTrue(Studentstories.isEnabled(), "Student Stories_Button is not working");
 			Actions act10=new Actions(driver);
 			act10.moveToElement(Studentstories).click().perform();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			String Studentstoriesexpurl = "https://amityonline.com/student-story";
 			if(driver.getCurrentUrl().equals(Studentstoriesexpurl)) {
 				test.log(Status.PASS, "StudentStories_Button is working");
@@ -885,6 +890,8 @@ public class Module1_FunctionalTesting extends POM {
 
 	}
 
+	
+	
 	@Test(priority = 21)
 	public void Leadership() throws InterruptedException {
 		Actions act7=new Actions(driver);
@@ -1228,7 +1235,7 @@ public class Module1_FunctionalTesting extends POM {
 	public void Blog() throws InterruptedException {
 		Actions act7=new Actions(driver);
 		act7.moveToElement(showMorElement).click().perform();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		test=reports.createTest("Blog_Button");
 		try {
 			Assert.assertTrue(Blog.isEnabled(), "Blog option is not enabled");
